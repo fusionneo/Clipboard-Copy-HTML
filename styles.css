@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C; /* Dark grey background */
+  }
+  
+  header {
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  
+  .copy-container {
+    background-color: #2D2D30; /* Medium grey bar */
+    width: 75%; /* Take up 75% of display area */
+    display: flex;
+    align-items: center;
+  }
+  
+  .copy-input {
+    width: 75%; /* Input takes up 75% of the div */
+    padding: 10px 0; /* Centered padding at top and bottom */
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3F3F46; /* Light grey background for input */
+    color: white;
+  }
+  
+  .copy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5%; /* 5% padding to the right of the copy button */
+  }
+  
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .copy-button-container {
+    width: 25%; /* Copy button takes up 25% of the div */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  

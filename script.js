@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (value) {
     // Decode the entire URI component
     console.log(value);
+    value = decodeURIComponent(value.replace(/\+/g, '%2B'));
+    console.log(value);
     value = decodeURIComponent(value);
     copyInput.value = value;
     console.log(value)

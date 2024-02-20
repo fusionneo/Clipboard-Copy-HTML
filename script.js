@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const urlParams = new URLSearchParams(window.location.search);
   const type = urlParams.get("type");
-  const value = urlParams.get("value");
+  let value = urlParams.get("value");
 
   if (type) {
     headerText.textContent = `Copy ${type} to clipboard`;
   }
 
   if (value) {
+    // Decode the entire URI component
+    value = decodeURIComponent(value);
     copyInput.value = value;
   }
 

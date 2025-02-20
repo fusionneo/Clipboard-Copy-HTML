@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (value) {
-    // Replace spaces with %2B and decode URI component
-    value = decodeURIComponent(value.replace(/\+/g, '%20'));
+    value = value.replace(/\+/g, ' ');
     copyInput.value = value;
   }
+
 
   copyButton.addEventListener("click", function () {
     copyInput.select();
